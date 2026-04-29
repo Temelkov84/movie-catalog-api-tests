@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Exam_Movie.DTOs
 {
-    internal class ApiResponseDTO
+    public class ApiResponseDTO
     {
         [JsonPropertyName("msg")]
         public string Msg { get; set; }

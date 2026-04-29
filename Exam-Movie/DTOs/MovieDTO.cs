@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Exam_Movie.DTOs
 {
-    internal class MovieDTO
+    public class MovieDTO
     {
         [JsonPropertyName("id")]
         public string Id { get; set; } = string.Empty;
