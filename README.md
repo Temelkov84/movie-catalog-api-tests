@@ -1,9 +1,12 @@
 ﻿# 🎬 Movie Catalog API Test Automation
 
+![CI](https://github.com/Temelkov84/movie-catalog-api-tests/actions/workflows/ci.yml/badge.svg)
+
 ## 📌 Project Overview
 
-This project contains automated API tests for a Movie Catalog REST API.
-The goal is to demonstrate practical skills in back-end testing, test automation, and CI integration.
+This project demonstrates API test automation skills including REST API validation, independent test design, data management, and CI integration.
+
+The system under test is a Movie Catalog REST API that allows users to manage movies (create, edit, retrieve and delete).
 
 ---
 
@@ -13,14 +16,14 @@ The goal is to demonstrate practical skills in back-end testing, test automation
 * NUnit
 * RestSharp
 * .NET 8
-* GitHub Actions (CI)
+* GitHub Actions (CI/CD)
 
 ---
 
 ## 🚀 Features
 
-* Authentication with JWT token
-* CRUD operations testing:
+* JWT authentication handling
+* Full CRUD API test coverage:
 
   * Create Movie
   * Edit Movie
@@ -28,19 +31,21 @@ The goal is to demonstrate practical skills in back-end testing, test automation
   * Delete Movie
 * Negative test scenarios:
 
-  * Invalid data
+  * Missing required fields
   * Non-existing resources
 * Independent tests (no shared state)
 * Automatic test data cleanup
+* Unique test data using GUID
 
 ---
 
 ## 🧪 Test Design
 
-* Each test creates its own test data
-* No dependency between tests
-* Unique test data using GUID
-* Cleanup implemented using TearDown
+* Each test creates its own data
+* Tests do not depend on execution order
+* Dynamic test data generation (GUID)
+* Cleanup implemented via TearDown
+* Assertions validate both status codes and response content
 
 ---
 
@@ -54,7 +59,7 @@ dotnet test
 
 ### Run via GitHub Actions:
 
-Tests run automatically on push.
+Tests run automatically on every push to the main branch.
 
 ---
 
@@ -62,13 +67,14 @@ Tests run automatically on push.
 
 * GitHub Actions workflow
 * Automatic build and test execution
+* Continuous feedback on test status
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Exam_Movie/
+MovieCatalogApiTests/
  ├── Clients/
  ├── Configuration/
  ├── DTOs/
@@ -80,6 +86,6 @@ Exam_Movie/
 
 ## 🎯 Purpose
 
-This project is part of a QA Automation portfolio, focusing on API testing and clean test design.
+This project is part of a QA Automation portfolio, focusing on real-world API testing practices and clean test architecture.
 
 ---
