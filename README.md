@@ -4,7 +4,7 @@
 
 ## 📌 Project Overview
 
-This project demonstrates API test automation skills including REST API validation, independent test design, data management, and CI integration.
+This project demonstrates API test automation skills including REST API validation, independent test design, data management, CI integration, and test reporting.
 
 The system under test is a Movie Catalog REST API that allows users to manage movies (create, edit, retrieve and delete).
 
@@ -17,6 +17,7 @@ The system under test is a Movie Catalog REST API that allows users to manage mo
 * RestSharp
 * .NET 8
 * GitHub Actions (CI/CD)
+* Allure Reports
 
 ---
 
@@ -29,13 +30,16 @@ The system under test is a Movie Catalog REST API that allows users to manage mo
   * Edit Movie
   * Get All Movies
   * Delete Movie
+
 * Negative test scenarios:
 
   * Missing required fields
   * Non-existing resources
+
 * Independent tests (no shared state)
 * Automatic test data cleanup
 * Unique test data using GUID
+* Allure test results uploaded as GitHub Actions artifact
 
 ---
 
@@ -55,37 +59,3 @@ The system under test is a Movie Catalog REST API that allows users to manage mo
 
 ```bash
 dotnet test
-```
-
-### Run via GitHub Actions:
-
-Tests run automatically on every push to the main branch.
-
----
-
-## 📊 CI Integration
-
-* GitHub Actions workflow
-* Automatic build and test execution
-* Continuous feedback on test status
-
----
-
-## 📂 Project Structure
-
-```
-MovieCatalogApiTests/
- ├── Clients/
- ├── Configuration/
- ├── DTOs/
- ├── Helpers/
- └── Tests/
-```
-
----
-
-## 🎯 Purpose
-
-This project is part of a QA Automation portfolio, focusing on real-world API testing practices and clean test architecture.
-
----
