@@ -27,3 +27,11 @@ jobs:
 
     - name: Run tests
       run: dotnet test MovieCatalogApiTests.sln --no-build --configuration Release --verbosity normal
+    
+    - name: Upload Allure results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: allure-results
+        path: |
+          **/allure-results

@@ -1,6 +1,6 @@
 ﻿# 🎬 Movie Catalog API Test Automation
 
-![CI](https://github.com/Temelkov84/movie-catalog-api-tests/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Temelkov84/movie-catalog-api-tests/actions/workflows/dotnet.yml/badge.svg)
 
 ## 📌 Project Overview
 

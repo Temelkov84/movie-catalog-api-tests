@@ -4,10 +4,12 @@ using NUnit.Framework;
 using RestSharp;
 using System.Net;
 using System.Text.Json;
+using Allure.NUnit;
 
 namespace Exam_Movie.Tests
 {
     [TestFixture]
+    [AllureNUnit]
     public class MovieTests
     {
         private MovieApiClient movieApiClient;
